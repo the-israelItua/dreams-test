@@ -1,0 +1,83 @@
+.star {
+  &__top {
+    &__green {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      @media screen and (max-width: 500px) {
+        top: 25%;
+        left: -1.5%;
+      }
+    }
+
+    &__yellow {
+      position: absolute;
+      top: 25.5%;
+      right: 34.1%;
+      @media screen and (max-width: 500px) {
+        top: 37%;
+        right: 10%;
+      }
+    }
+    &__white {
+      position: absolute;
+      top: 20%;
+      right: 13%;
+      @media screen and (max-width: 500px) {
+        top: 18%;
+        right: 6%;
+      }
+    }
+  }
+
+  &__bottom {
+    &__cross {
+      position: absolute;
+      bottom: 1%;
+      right: 28%;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+      &__two {
+        position: absolute;
+        bottom: -10%;
+        left: 32%;
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
+      }
+    }
+    &__yellow {
+      position: absolute;
+      bottom: -5%;
+      left: 20%;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+    &__white {
+      position: absolute;
+      bottom: 25%;
+      left: 22%;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+    &__smalldiamond {
+      position: absolute;
+      bottom: 11%;
+      left: 45%;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+    &__bigdiamond {
+      position: absolute;
+      bottom: 11%;
+      left: 55%;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+}

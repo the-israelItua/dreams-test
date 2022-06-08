@@ -1,0 +1,47 @@
+@import "../../styles/functions.scss";
+
+.header {
+  width: 100%;
+
+  &__logo {
+    position: absolute;
+    top: pxToRem(44);
+    left: pxToRem(104);
+
+    @media screen and (max-width: 500px) {
+      left: pxToRem(19);
+      top: pxToRem(35);
+    }
+  }
+
+  &__date {
+    position: absolute;
+    top: pxToRem(44);
+    right: pxToRem(104);
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 500px) {
+      right: pxToRem(19);
+      top: pxToRem(35);
+    }
+    svg {
+      margin-right: pxToRem(10);
+    }
+
+    h5 {
+      font-size: pxToEm(18);
+      font-weight: 700;
+      line-height: pxToRem(20);
+      color: #ffffff;
+    }
+
+    p {
+      font-size: pxToEm(14);
+      font-weight: 400;
+      line-height: pxToRem(15);
+      letter-spacing: -0.02em;
+      color: #ffffff99;
+      margin-top: pxToRem(4);
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../styles/functions.scss";
+
+.card {
+  box-shadow: 0px -1px 11px 0px #ffffff2b inset;
+  margin: pxToRem(44) 0 pxToRem(44);
+  @media screen and (max-width: 500px) {
+    margin: pxToRem(24) pxToRem(20) pxToRem(25);
+  }
+  &__content {
+    width: pxToRem(425);
+    border-radius: pxToRem(8);
+    padding: pxToRem(24) pxToRem(27);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.39) -213.5%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    box-shadow: 0px 2px 0px 0px #ffffff3d inset;
+    @media screen and (max-width: 500px) {
+      width: unset;
+    }
+    h4 {
+      font-size: pxToEm(16);
+      font-weight: 700;
+      line-height: pxToRem(26);
+      letter-spacing: 0em;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: pxToRem(16);
+    }
+
+    li {
+      font-size: pxToEm(14);
+      line-height: pxToRem(22);
+      letter-spacing: -0.02em;
+      margin-left: pxToRem(22);
+      color: rgba(225, 225, 225, 0.9);
+      span {
+        font-weight: 800;
+        color: #ffffff;
+      }
+    }
+
+    p {
+      margin: pxToRem(8) 0 pxToRem(16);
+      font-size: pxToEm(14);
+      font-weight: 400;
+      line-height: pxToRem(22);
+      letter-spacing: -0.02em;
+      color: rgba(225, 225, 225, 0.9);
+    }
+    &__foot {
+      display: flex;
+      background: #0000004d;
+      padding: pxToRem(16);
+      border-radius: pxToRem(10);
+
+      svg {
+        width: 11%;
+        @media screen and (max-width: 500px) {
+          width: 15%;
+        }
+      }
+
+      p {
+        font-size: pxToEm(12);
+        font-weight: 400;
+        line-height: pxToRem(19);
+        letter-spacing: -0.02em;
+        margin: 0 0 0 pxToRem(4);
+        padding: 0;
+        color: rgba(225, 225, 225, 0.9);
+        span {
+          font-weight: 900;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

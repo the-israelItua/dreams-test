@@ -1,0 +1,39 @@
+@import "../../styles/functions.scss";
+
+.coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @media screen and (max-width: 500px) {
+  }
+  &__pot {
+    position: absolute;
+    @media screen and (max-width: 500px) {
+      left: 0;
+
+      img {
+        width: 100vw;
+      }
+    }
+  }
+
+  &__left {
+    position: absolute;
+    bottom: 6%;
+    left: 20%;
+    @media screen and (max-width: 500px) {
+      left: -18%;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    bottom: 2%;
+    right: 18%;
+    @media screen and (max-width: 500px) {
+      right: 0%;
+    }
+  }
+}

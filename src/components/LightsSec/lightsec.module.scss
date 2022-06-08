@@ -1,0 +1,61 @@
+.lights {
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+  &__one {
+    position: absolute;
+    bottom: -5%;
+    left: -7%;
+    @media screen and (max-width: 500px) {
+      bottom: -5%;
+      left: -140vw;
+    }
+  }
+  &__two {
+    position: absolute;
+    bottom: -7%;
+    left: 8%;
+    @media screen and (max-width: 500px) {
+      bottom: -3%;
+      left: -105vw;
+      height: pxToRem(8);
+      overflow: hidden;
+    }
+  }
+
+  &__three {
+    position: absolute;
+    bottom: -7%;
+    left: 45%;
+    @media screen and (max-width: 500px) {
+      bottom: -3%;
+      left: 28vw;
+      height: pxToRem(8);
+      overflow: hidden;
+    }
+  }
+
+  &__four {
+    position: absolute;
+    bottom: -7%;
+    left: 52%;
+    @media screen and (max-width: 500px) {
+      bottom: -3%;
+      right: 15%;
+      height: pxToRem(8);
+      overflow: hidden;
+    }
+  }
+
+  &__five {
+    position: absolute;
+    bottom: -7%;
+    left: 58%;
+    @media screen and (max-width: 500px) {
+      bottom: -3%;
+      right: 1%;
+      height: pxToRem(28);
+      overflow: hidden;
+    }
+  }
+}
